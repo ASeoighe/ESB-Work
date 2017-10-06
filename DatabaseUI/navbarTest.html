@@ -1,0 +1,104 @@
+<html lang="en">
+<style type = "text/css">
+		body {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		padding: 10px;
+		background: url(img/bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		}
+
+		label {
+		font-weight:bold;
+		width:100px;
+		font-size:16px;
+		}
+		head {
+		background-color: lightgrey;
+		}
+		
+		.box {
+		border:#666666 solid 1px;
+		}
+		.myTable { 
+		width: 50%;
+		text-align: center;
+		background-color: lightgrey;
+		border-collapse: collapse; 
+		}
+		.myTable th { 
+		background-color: grey;
+		color: white; 
+		}
+		.myTable td, 
+		.myTable th { 
+		padding: 10px;
+		border: 1px solid black; 
+		}	
+
+		titleBox {
+		max-width: 100%;
+        background-color: light-grey;
+        border: 1px solid #e5e5e5;
+		}
+		
+		.searchBar {
+		 min-height: 35px;
+		 width: 235px;
+		}
+		
+		nav ul li:hover > ul {
+			display: block;
+			position: absolute;
+			margin-left: 30px;
+		}
+		
+	</style>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <title>Index</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input id="searchBox" class="form-control" type="text" name="term" placeholder="Enter Sort Code" />
+        </div>
+        <input id="searchButton" class="btn btn-default" type="submit" value="Search" />
+      </form>
+	<div class="navbar-form btn-group dropdown">
+    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Admin Options
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="signup.php">Add New User</a></li>
+      <li><a href="addToDatabase.php">Add to DataBase</a></li>
+    </ul>
+	</div>
+	  
+      <ul class="navbar-form nav navbar-nav navbar-right">
+        <li><button class="btn" type="button" href = "logout.php">Log Out</button></li>
+      </ul>
+    
+  </div><!-- /.container-fluid -->
+</nav>
+</body>
+	<script>
+		function myFunction() {
+			alert("No Results Found!");
+			window.location = "adminSearch.php";
+		}
+
+	</script>
+	  
+</html>
